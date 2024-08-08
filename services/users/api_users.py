@@ -1,5 +1,5 @@
-from wsgiref.headers import Headers
 import allure
+from config.config import Headers
 from models.users_model import UserListPositiveModel, UserListNegativeModel
 from services.users.endpoints import Endpoints
 from utils.helper import Helper
