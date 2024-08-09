@@ -24,6 +24,7 @@ class TestFollowUser(BaseTest):
         assert is_follow is False, 'User has not unfollowed'
 
     @allure.description('Check the error message when unfollowing from already unfollowed user')
+    @allure.tag('negative')
     def test_unfollow_unfollowed_user(self, login):
         unfollowed_user_id = AuthDataSecondUser.USER_ID
 
@@ -31,7 +32,8 @@ class TestFollowUser(BaseTest):
         assert unfollow.messages == ['You are already unfollowed this user'], \
             'Wrong response message when unfollowing from an unfollowed user'
 
-    @allure.description('cHECK THE error message when following to an already followed user')
+    @allure.description('Check the error message when following to an already followed user')
+    @allure.tag('negative')
     def test_follow_user_twice(self, login):
         follow = self.api_follow.follow_user_twice(self.auth_cookie)
 
