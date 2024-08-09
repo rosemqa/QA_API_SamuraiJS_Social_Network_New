@@ -7,6 +7,12 @@ class ResultModel(BaseModel):
     fieldsErrors: list
     resultCode: int
 
+    @field_validator('messages')
+    def message_is_empty(cls, value):
+        if value:
+            raise ValueError('Message_is_not_empty')
+        return value
+
     @field_validator('resultCode')
     def check_result_code(cls, value):
         if value != 0:
