@@ -1,6 +1,7 @@
 import requests
 from config.data import AuthDataFirstUser
 from services.auth.api_auth import AuthAPI
+from services.follow.api_follow import FollowAPI
 from services.user_profile.api_profile import ProfileAPI
 from services.users.api_users import UsersAPI
 
@@ -10,3 +11,4 @@ class BaseTest:
         self.api_auth = AuthAPI()
         self.api_users = UsersAPI()
         self.api_profile = ProfileAPI()
+        self.api_follow = FollowAPI()
