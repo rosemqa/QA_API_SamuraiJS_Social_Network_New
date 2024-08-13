@@ -10,7 +10,7 @@ class ResultModel(BaseModel):
     @field_validator('messages')
     def message_is_empty(cls, value):
         if value:
-            raise ValueError('Message_is_not_empty')
+            raise ValueError('Message is not empty')
         return value
 
     @field_validator('resultCode')

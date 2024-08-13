@@ -7,12 +7,6 @@ from services.auth.api_auth import AuthAPI
 from services.user_profile.api_profile import ProfileAPI
 
 
-@pytest.fixture(scope='class')
-def login(request):
-    auth = AuthAPI()
-    request.cls.auth_cookie = auth.login_user()['auth_cookie']
-
-
 @allure.epic('User profile')
 class TestUserProfile(BaseTest):
 
@@ -66,7 +60,7 @@ class TestUserProfile(BaseTest):
             assert about_me == edited_profile_data.aboutMe, 'Check "aboutMe" in the Get response'
         with check:
             assert looking_for_job == edited_profile_data.lookingForAJob, 'Check "lookingForAJob" in the Get response'
-        with (check):
+        with check:
             assert job_description == edited_profile_data.lookingForAJobDescription, \
                 'Check "lookingForAJobDescription" in the Get response'
         with check:
