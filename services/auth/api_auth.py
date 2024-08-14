@@ -19,7 +19,6 @@ class AuthAPI(Helper):
         response = MyRequests.post(
             url=self.endpoints.login,
             json=self.payloads.login_data(),
-            headers=self.headers.api_key
         )
         auth_cookie = response.cookies['.ASPXAUTH']
         assert response.status_code == 200, f'{response.status_code} {response.text}'
