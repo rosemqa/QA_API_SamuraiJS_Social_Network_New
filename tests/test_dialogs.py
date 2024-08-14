@@ -70,7 +70,6 @@ class TestDialogs(BaseTest):
     def test_new_messages_count(self):
         # GET INITIAL COUNT OF NEW MESSAGES
         initial_count = self.api_dialogs.get_new_messages_count(self.recipient_auth_cookie)
-        print(initial_count)
 
         # SEND A FEW MESSAGES (2-5)
         number_of_messages_to_send = random.randint(2, 5)
@@ -79,7 +78,6 @@ class TestDialogs(BaseTest):
 
         # GET COUNT OF NEW MESSAGES AFTER SENDING THEM
         count = self.api_dialogs.get_new_messages_count(self.recipient_auth_cookie)
-        print(count)
         assert count == initial_count + number_of_messages_to_send, 'New messages count is not correct after sending'
 
         # GET LIST OF RECEIVED MESSAGES (VIEW ALL MESSAGES)
@@ -87,7 +85,6 @@ class TestDialogs(BaseTest):
 
         # GET COUNT OF NEW MESSAGES AFTER VIEWING THEM
         count = self.api_dialogs.get_new_messages_count(self.recipient_auth_cookie)
-        print(count)
         assert count == initial_count, 'New messages count is not correct after viewing'
 
     @allure.description('The message can be deleted and restored by recipient')

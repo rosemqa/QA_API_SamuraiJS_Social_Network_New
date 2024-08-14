@@ -3,9 +3,6 @@ import pytest
 from config.base_test import BaseTest
 from config.data import AuthDataFirstUser
 from services.auth.payloads import Payloads
-from dotenv import load_dotenv
-
-load_dotenv()
 
 
 @allure.epic('Authorization')

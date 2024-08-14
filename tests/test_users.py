@@ -12,7 +12,6 @@ class TestUsers(BaseTest):
 
         users = self.api_users.get_user_list_by_default()
         number_of_users_per_page = len(users.items)
-        print(users)
 
         assert number_of_users_per_page == page_size_by_default, \
             'Number of users on the page is not equal to the page size by default'
