@@ -17,6 +17,7 @@ jobs:
 
       - name: Run API-tests via docker-compose
         run: |
+          docker compose build
           docker compose up --exit-code-from api_tests || true
         env:
           FIRST_API_KEY: ${{secrets.FIRST_API_KEY}}
@@ -24,7 +25,6 @@ jobs:
           FIRST_PASSWORD: ${{secrets.FIRST_PASSWORD}}
           SECOND_PASSWORD: ${{secrets.SECOND_PASSWORD}}
 
-          
 #      - name: Copy history from gh-pages to allure_results
 #        run: |
 #          sudo mkdir -p allure_results/history
