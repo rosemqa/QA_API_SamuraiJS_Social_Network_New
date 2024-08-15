@@ -32,7 +32,7 @@ jobs:
           
       - name: Generate Allure report
         run: |
-          sudo docker-compose run api_tests /bin/sh -c "allure generate allure_results --clean -o allure_report"
+          sudo docker compose run api_tests /bin/sh -c "allure generate allure_results --clean -o allure_report"
           
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
