@@ -4,7 +4,7 @@ services:
     build: .
     volumes:
       - .:/test_project
-    # command: python -m pytest --alluredir=allure_results/ -v
+    command: /bin/sh -c "pytest --alluredir=allure_results/ -v"
     environment:
       FIRST_API_KEY: ${FIRST_API_KEY}
       SECOND_API_KEY: ${SECOND_API_KEY}
