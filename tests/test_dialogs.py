@@ -68,6 +68,9 @@ class TestDialogs(BaseTest):
 
     @allure.description('Number of new messages is correct after sending/viewing them')
     def test_new_messages_count(self):
+        # PREREQUISITE: GET LIST OF RECEIVED MESSAGES TO UNMARK NEW MESSAGES
+        self.api_dialogs.get_message_list(self.SENDER_ID, self.recipient_auth_cookie, count=20)
+
         # GET INITIAL COUNT OF NEW MESSAGES
         initial_count = self.api_dialogs.get_new_messages_count(self.recipient_auth_cookie)
 
