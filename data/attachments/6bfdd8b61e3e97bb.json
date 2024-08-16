@@ -1,0 +1,22 @@
+{
+    "data": {
+        "message": {
+            "id": "036f67fa-dea1-4f41-8d85-146cc8bccef4",
+            "body": "Event which performance girl leader game.",
+            "translatedBody": null,
+            "addedAt": "2024-08-16T16:29:21.567",
+            "senderId": 30478,
+            "senderName": "FanLis",
+            "recipientId": 30563,
+            "recipientName": "NufNuf",
+            "viewed": false,
+            "deletedBySender": false,
+            "deletedByRecipient": false,
+            "isSpam": false,
+            "distributionId": null
+        }
+    },
+    "messages": [],
+    "fieldsErrors": [],
+    "resultCode": 0
+}
