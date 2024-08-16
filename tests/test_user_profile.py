@@ -65,7 +65,7 @@ class TestUserProfile(BaseTest):
 
         for contact, value in contacts.items():
             with check:
-                assert value == str(edited_profile_data.contacts.dict()[contact]), \
+                assert value == str(edited_profile_data.contacts.model_dump()[contact]), \
                     f'Check "{contact}" in the Get response'
 
     @allure.description('Profile contacts cannot be edited with incorrect url format')
