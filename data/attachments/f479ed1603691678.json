@@ -1,0 +1,22 @@
+{
+    "data": {
+        "message": {
+            "id": "f5204efe-8658-4944-8aed-6134ba19b8b4",
+            "body": "Guy stop talk.",
+            "translatedBody": null,
+            "addedAt": "2024-08-16T16:18:01.547",
+            "senderId": 30478,
+            "senderName": "FanLis",
+            "recipientId": 30563,
+            "recipientName": "NufNuf",
+            "viewed": false,
+            "deletedBySender": false,
+            "deletedByRecipient": false,
+            "isSpam": false,
+            "distributionId": null
+        }
+    },
+    "messages": [],
+    "fieldsErrors": [],
+    "resultCode": 0
+}
