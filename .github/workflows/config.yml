@@ -17,7 +17,7 @@ jobs:
 
       - name: Run API-tests via docker-compose
         run: |
-          docker compose up --exit-code-from api_tests || true
+          docker compose up api_tests --exit-code-from api_tests || true
         env:
           FIRST_API_KEY: ${{secrets.FIRST_API_KEY}}
           SECOND_API_KEY: ${{secrets.SECOND_API_KEY}}
