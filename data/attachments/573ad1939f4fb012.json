@@ -1,0 +1,22 @@
+{
+    "data": {
+        "message": {
+            "id": "b3ea2ca0-0cea-4316-9cdd-8c2e47423e5f",
+            "body": "Right friend daughter fact.",
+            "translatedBody": null,
+            "addedAt": "2024-10-24T22:51:41.823",
+            "senderId": 30478,
+            "senderName": "FanLis",
+            "recipientId": 30563,
+            "recipientName": "NufNuf",
+            "viewed": false,
+            "deletedBySender": false,
+            "deletedByRecipient": false,
+            "isSpam": false,
+            "distributionId": null
+        }
+    },
+    "messages": [],
+    "fieldsErrors": [],
+    "resultCode": 0
+}
