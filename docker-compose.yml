@@ -1,6 +1,6 @@
 services:
   api_tests:
-    image: python:3.12.3-alpine3.20
+    image: tests
     build: .
     volumes:
       - .:/test_project
@@ -10,3 +10,10 @@ services:
       SECOND_API_KEY: ${SECOND_API_KEY}
       FIRST_PASSWORD: ${FIRST_PASSWORD}
       SECOND_PASSWORD: ${SECOND_PASSWORD}
+
+  report:
+    image: tests
+    build: .
+    volumes:
+      - .:/test_project
+    command: /bin/sh -c "allure generate allure_results --clean -o allure_report"
