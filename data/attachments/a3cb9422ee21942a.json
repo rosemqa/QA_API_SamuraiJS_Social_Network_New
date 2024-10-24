@@ -1,0 +1,22 @@
+{
+    "data": {
+        "message": {
+            "id": "2939e2d5-2d63-49c6-87bd-769463d13643",
+            "body": "Our clear hot.",
+            "translatedBody": null,
+            "addedAt": "2024-10-24T22:34:36.367",
+            "senderId": 30478,
+            "senderName": "FanLis",
+            "recipientId": 30563,
+            "recipientName": "NufNuf",
+            "viewed": false,
+            "deletedBySender": false,
+            "deletedByRecipient": false,
+            "isSpam": false,
+            "distributionId": null
+        }
+    },
+    "messages": [],
+    "fieldsErrors": [],
+    "resultCode": 0
+}
