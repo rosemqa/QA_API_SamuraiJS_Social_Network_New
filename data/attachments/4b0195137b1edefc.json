@@ -1,0 +1,22 @@
+{
+    "data": {
+        "message": {
+            "id": "341ace46-4481-42e8-9272-502bb799dfa1",
+            "body": "Blue late less tree way anyone.",
+            "translatedBody": null,
+            "addedAt": "2024-10-26T22:11:46.993",
+            "senderId": 30478,
+            "senderName": "FanLis",
+            "recipientId": 30563,
+            "recipientName": "NufNuf",
+            "viewed": false,
+            "deletedBySender": false,
+            "deletedByRecipient": false,
+            "isSpam": false,
+            "distributionId": null
+        }
+    },
+    "messages": [],
+    "fieldsErrors": [],
+    "resultCode": 0
+}
